@@ -1,8 +1,14 @@
+GIT
+  remote: https://github.com/croesnick/ruby-elm-compiler.git
+  revision: 84a060bea533843c467f1201a90c960856bf8e3f
+  ref: 84a060bea533843c467f1201a90c960856bf8e3f
+  specs:
+    elm-compiler (0.3.0)
+
 PATH
   remote: .
   specs:
     elm-rails (0.2.1)
-      elm-compiler (~> 0.1.2)
       rails (>= 4.0)
 
 GEM
@@ -46,9 +52,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
-    builder (3.2.2)
+    builder (3.2.3)
     concurrent-ruby (1.0.4)
-    elm-compiler (0.1.2)
     erubis (2.7.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
@@ -104,7 +109,7 @@ GEM
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    websocket-driver (0.6.4)
+    websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
 
@@ -112,7 +117,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  elm-compiler!
   elm-rails!
+  minitest (>= 5.10)
 
 BUNDLED WITH
-   1.12.5
+   1.14.5
